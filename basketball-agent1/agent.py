@@ -1,4 +1,4 @@
-"""ბასკეტბოლის სტატისტიკის აგენტი — ეტაპი 1.
+"""Basketball სტატისტიკის აგენტი — ეტაპი 1.
 
 გაშვება Colab-ში (Runtime -> Change runtime type -> GPU):
     !pip install -q -r requirements.txt
