@@ -1,4 +1,4 @@
-"""ბასკეტბოლის სტატისტიკის აგენტი — ეტაპი 1.
+"""basketball სტატისტიკის აგენტი — ეტაპი 1.
 
 გაშვება Colab-ში (Runtime -> Change runtime type -> GPU):
     !pip install -q -r requirements.txt
@@ -8,8 +8,7 @@ from smolagents import ToolCallingAgent, TransformersModel
 
 from tools import get_stat_average
 
-# ეტაპი 1-ზე პატარა მოდელი, რომ T4 GPU-ზე უპრობლემოდ ეტეოდეს.
-# შემდეგ ეტაპზე შეიძლება 7B (4-bit) სცადოთ.
+
 MODEL_ID = "Qwen/Qwen2.5-3B-Instruct"
 
 INSTRUCTIONS = (
@@ -37,7 +36,6 @@ def main() -> None:
         question = input("\nშეკითხვა: ").strip()
         if question.lower() in {"exit", "quit", ""}:
             break
-        # reset=False — აგენტი წინა შეკითხვებს იხსენებს (თანმიმდევრული გარემო)
         answer = agent.run(question, reset=False)
         print(f"\nპასუხი: {answer}")
 
