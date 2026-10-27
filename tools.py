@@ -1,4 +1,4 @@
-"""ხელსაწყოები (tools) basketball აგენტისთვის."""
+"""tools basketball აგენტისთვის."""
 import csv
 from pathlib import Path
 
