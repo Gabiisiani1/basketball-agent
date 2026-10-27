@@ -1,4 +1,4 @@
-"""ხელსაწყოები (tools) ბასკეტბოლის აგენტისთვის."""
+"""ხელსაწყოები (tools) basketball აგენტისთვის."""
 import csv
 from pathlib import Path
 
@@ -6,7 +6,6 @@ from smolagents import tool
 
 DATA_FILE = Path(__file__).parent / "data" / "games.csv"
 
-# სვეტები, რომელზეც საშუალოს დათვლა აზრიანია
 STATS = [
     "minutes", "points", "rebounds", "assists", "steals", "blocks",
     "turnovers", "fouls", "fgm", "fga", "tpm", "tpa", "ftm", "fta",
